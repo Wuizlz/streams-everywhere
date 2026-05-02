@@ -1,0 +1,12 @@
+URL: https://httpbin.org/basic-auth/user/passwd
+Status: 401
+
+Headers:
+content-type: <not present>
+location: <not present>
+www-authenticate: Basic realm="Fake Realm"
+content-length: 0
+
+Decoded charset: UTF-8
+Body preview:
+

@@ -1,0 +1,34 @@
+== IPC Demo ==
+
+== inheritIO() Example ==
+alpha
+bravo
+producer: sample warning on stderr
+charlie
+inheritIO exit code: 0
+
+== Captured stdout/stderr Example ==
+-- stdout --
+alpha
+bravo
+charlie
+-- stderr --
+producer: sample warning on stderr
+captured exit code: 3
+
+== Pipeline Example ==
+-- pipeline output --
+01 | ALPHA
+02 | BRAVO
+03 | CHARLIE
+pipeline final exit code: 0
+
+== File Redirection Example ==
+producer: sample warning on stderr
+redirected file: ipc-demo/producer-output.txt
+-- file contents --
+alpha
+bravo
+charlie
+file redirection exit code: 0
+

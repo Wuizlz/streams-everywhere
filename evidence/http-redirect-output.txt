@@ -1,0 +1,12 @@
+URL: http://github.com
+Status: 301
+
+Headers:
+content-type: <not present>
+location: https://github.com/
+www-authenticate: <not present>
+content-length: 0
+
+Decoded charset: UTF-8
+Body preview:
+

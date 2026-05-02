@@ -1,0 +1,12 @@
+URL: https://httpbin.org/status/403
+Status: 403
+
+Headers:
+content-type: text/html; charset=utf-8
+location: <not present>
+www-authenticate: <not present>
+content-length: 0
+
+Decoded charset: UTF-8
+Body preview:
+
