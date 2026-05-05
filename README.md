@@ -1,68 +1,37 @@
 # Streams Everywhere
 
-This project matches the proposal for the CS 33600 honors stacked component.
-The core idea is to compare two kinds of stream-based communication in Java:
+Final honors stacked project for CS 33600: Network Programming.
 
-- Local inter-process communication with `ProcessBuilder`
-- HTTP request/response streams with `HttpClient`
+The project compares two stream-based communication models in Java:
 
-The final project is supposed to produce both runnable demos and a research
-report that explains what the demos show.
+- local inter-process communication with `ProcessBuilder`
+- HTTP request/response communication with `HttpClient`
 
-## What To Build First
+The final report argues that both models move ordered data through streams, but
+they differ in control, observability, metadata, and failure handling.
 
-Start with the demos before the paper.
+## Final Report
 
-1. Build the IPC demo so you can observe stdout, stderr, redirection, and exit
-   codes in a controlled environment.
-2. Build the HTTP demo so you can inspect status codes, headers, and body
-   decoding from real responses.
-3. Record evidence from those runs for screenshots and notes.
-4. Write the report after the demos are producing results you can analyze.
+The finalized submission report is:
 
-That order is faster because the report will need concrete observations, not
-just theory.
+- `final/Streams_Everywhere_Final.pdf`
+
+The working Markdown draft is also kept for version history:
+
+- `report/first-draft.md`
 
 ## Project Layout
 
 - `ipc-demo/`
-  Starter code for local process-stream experiments with `ProcessBuilder`
+  Java source for the local process-stream demo.
 - `http-demo/`
-  Starter code for HTTP stream experiments with `HttpClient`
-- `report/`
-  Outline for the final paper
+  Java source for the HTTP request/response demo.
 - `evidence/`
-  Screenshots, terminal captures, sample outputs, and notes
-
-## Suggested Milestones
-
-### Milestone 1: IPC Baseline
-
-- Run a child process with `inheritIO()`
-- Run a child process with captured stdout/stderr
-- Run a two-process pipeline
-- Redirect output to a file
-- Compare exit codes and output behavior
-
-### Milestone 2: HTTP Baseline
-
-- Send a GET request
-- Print the status code
-- Print key headers
-- Decode the body using the charset from `Content-Type`
-- Compare different endpoints such as `200`, `302`, `401`, and `403`
-
-### Milestone 3: Evidence Collection
-
-- Save terminal output
-- Capture screenshots
-- Keep notes on buffering, errors, redirect behavior, and decoding differences
-
-### Milestone 4: Report Draft
-
-- Use the outline in [report/report-outline.md](/Users/wuzi/Desktop/java%20workspace/Networking-Programming/streams-everywhere/report/report-outline.md)
-- Convert demo observations into comparisons and conclusions
-- Add at least 8 academic or industry sources
+  Runtime outputs and Kraft course-note PDFs used as report evidence.
+- `report/`
+  Working report draft and outline.
+- `final/`
+  Final exported report.
 
 ## Compile And Run
 
@@ -72,35 +41,46 @@ From the project root:
 cd "/Users/wuzi/Desktop/java workspace/Networking-Programming/streams-everywhere"
 ```
 
-Compile the IPC demo:
+Compile and run the IPC demo:
 
 ```bash
 javac ipc-demo/*.java
-```
-
-Run the IPC demo:
-
-```bash
 java -cp ipc-demo ProcessBuilderIpcDemo
 ```
 
-Compile the HTTP demo:
+Compile and run the HTTP demo:
 
 ```bash
 javac http-demo/*.java
-```
-
-Run the HTTP demo:
-
-```bash
 java -cp http-demo FetchURLDemo https://example.com
 ```
 
-## Immediate Next Step
+## Runtime Evidence
 
-If you want the cleanest start, do this next:
+The saved demo outputs are:
 
-1. Compile both demo folders.
-2. Run the IPC demo and save its output.
-3. Run the HTTP demo against a simple URL.
-4. Start filling `evidence/` and `report/report-outline.md` as you learn things.
+- `evidence/ipc-run-output.txt`
+- `evidence/http-google-output.txt`
+- `evidence/http-github-output.txt`
+- `evidence/http-redirect-output.txt`
+- `evidence/http-401-output.txt`
+- `evidence/http-403-output.txt`
+- `evidence/http-example-output.txt`
+- `handshake.log`
+
+These cover inherited/captured process streams, pipelines, file redirection,
+exit codes, HTTP `200`, redirect, `401`, `403`, charset decoding, and an earlier
+TLS/PKIX failure example.
+
+## Source Evidence
+
+The Kraft course-note PDFs cited in the report are kept locally:
+
+- `evidence/HTTP - CS_33600.pdf`
+- `evidence/Network clients - CS_33600.pdf`
+- `evidence/ProcessBuilder - CS_33600.pdf`
+- `evidence/Streams - CS_33600.pdf`
+
+Additional source notes are tracked in:
+
+- `evidence/vital-sources.md`

@@ -199,12 +199,6 @@ Files:
 - `evidence/Network clients - CS_33600.pdf`
 - `evidence/ProcessBuilder - CS_33600.pdf`
 - `evidence/Streams - CS_33600.pdf`
-- `evidence/Streams - CS_33600.html`
-- `evidence/ProcessBuilder - CS_33600.html`
-- `evidence/Network clients - CS_33600.html`
-- `evidence/HTTP - CS_33600.html`
-- `evidence/Sockets - CS_33600.html`
-- `evidence/Simple IPC - CS_33600.html`
 
 Original URLs:
 
@@ -212,8 +206,6 @@ Original URLs:
 - http://math.pnw.edu/~rlkraft/cs33600/for-class/readmes/Readme_4_ProcessBuilder/
 - http://math.pnw.edu/~rlkraft/cs33600/for-class/readmes/Readme_10_network_clients/
 - http://math.pnw.edu/~rlkraft/cs33600/for-class/readmes/Readme_12_http/
-- http://math.pnw.edu/~rlkraft/cs33600/for-class/readmes/Readme_11_sockets/
-- http://math.pnw.edu/~rlkraft/cs33600/for-class/readmes/Readme_2_simple_ipc/
 
 Why they matter:
 
@@ -229,10 +221,6 @@ Why they matter:
 - `HTTP - CS_33600.pdf` explains HTTP request/response structure, status
   codes, headers, body bytes, redirection, and persistent connections.
   - useful pages: 3-5, 8-9
-- `Sockets - CS_33600.html` supports the socket-layer background behind HTTP.
-- `Simple IPC - CS_33600.html` supports the broader definition of IPC,
-  including command-line arguments, environment variables, files, and exit
-  codes.
 
 Use these in the report for:
 
@@ -241,11 +229,9 @@ Use these in the report for:
 - explaining why HTTP adds message syntax on top of streamed bytes
 - connecting the demos to course concepts
 
-Note: the PDFs are the preferred local copies for the four Kraft sources cited
-in the report. The saved HTML pages can still be used as local text-based
-course notes. Some hyperlinks and referenced page assets may not work because
-the pages were downloaded from the course site, but the visible text and ASCII
-diagrams inside the HTML files are still useful as supporting course evidence.
+Note: the PDFs are the local copies for the four Kraft sources cited in the
+final report. The previously downloaded HTML copies were removed because the
+PDFs support stable page-number citations.
 
 ### 9. Chapter 13 Material
 
