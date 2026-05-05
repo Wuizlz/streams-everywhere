@@ -1,5 +1,8 @@
 # Streams Everywhere: Comparing Local Pipelines and HTTP in Java
 
+Note: this Markdown file is an archived working draft. The finalized
+submission is `final/Streams_Everywhere_Final.pdf`.
+
 Daniel Briseno  
 CS 33600: Network Programming  
 Instructor: Roger Kraft  
@@ -355,7 +358,7 @@ are recorded in `evidence/http-google-output.txt`,
 `evidence/http-github-output.txt`, `evidence/http-redirect-output.txt`,
 `evidence/http-401-output.txt`, `evidence/http-403-output.txt`, and
 `evidence/http-example-output.txt`. The earlier TLS debug run is saved as
-`handshake.log`. The downloaded course HTML notes in `evidence/` are used as
+`handshake.log`. The Kraft course-note PDFs in `evidence/` are used as
 supporting course material for the stream, pipe, socket, and HTTP-message
 diagrams discussed in the paper.
 

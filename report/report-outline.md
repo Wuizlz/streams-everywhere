@@ -1,5 +1,8 @@
 # Streams Everywhere Report Outline
 
+Status: archived planning document. The finalized submission is
+`final/Streams_Everywhere_Final.pdf`.
+
 ## Working Title
 
 Streams Everywhere: Comparing Local Pipelines and HTTP in Java
@@ -61,7 +64,7 @@ are different enough that developers need different mental models for each.
   before any HTTP response is available
 - Certificate-path errors such as `PKIX path building failed` show a network trust
   dependency that does not exist in local IPC
-- Screenshots or evidence references
+- Evidence-file references
 
 ### 7. Conclusion
 

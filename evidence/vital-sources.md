@@ -1,6 +1,7 @@
 # Vital Sources For Current Implementation
 
 Date collected: 2026-03-24
+Last updated: 2026-05-05
 
 This file collects source references for the APIs and protocol behavior used by
 the current implementation.
@@ -8,8 +9,8 @@ the current implementation.
 Important: these are supporting sources, not execution evidence.
 
 - Source evidence = documentation, standards, chapter material, research
-- Runtime evidence = terminal output, screenshots, generated files, and demo
-  results from this project
+- Runtime evidence = terminal output, generated files, and demo results from
+  this project
 
 ## Current Code Covered
 
@@ -184,7 +185,8 @@ Use this source for:
 
 - explaining why the HTTP demo prints `content-type`, `location`, and
   `www-authenticate`
-- explaining the meaning of `200`, `302`, `401`, and `403`
+- explaining the meaning of `200`, redirect status codes such as `301`, `401`,
+  and `403`
 
 ## Existing Course Materials In This Repo
 
@@ -296,7 +298,6 @@ Put these in `evidence/` as you run the demos:
 
 - terminal output from compiling and running the IPC demo
 - terminal output from running the HTTP demo
-- screenshots of successful runs
 - the generated file `ipc-demo/producer-output.txt`
 - short notes describing what changed between `inheritIO()`, captured streams,
   and file redirection

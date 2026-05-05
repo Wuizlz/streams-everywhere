@@ -16,9 +16,11 @@ The finalized submission report is:
 
 - `final/Streams_Everywhere_Final.pdf`
 
-The working Markdown draft is also kept for version history:
+Earlier Markdown planning/draft files are kept for version history only. The
+PDF above is the submission copy:
 
 - `report/first-draft.md`
+- `report/report-outline.md`
 
 ## Project Layout
 
@@ -55,6 +57,21 @@ javac http-demo/*.java
 java -cp http-demo FetchURLDemo https://example.com
 ```
 
+Regenerate the saved runtime evidence:
+
+```bash
+javac ipc-demo/*.java
+javac http-demo/*.java
+
+java -cp ipc-demo ProcessBuilderIpcDemo > evidence/ipc-run-output.txt 2>&1
+java -cp http-demo FetchURLDemo https://example.com > evidence/http-example-output.txt 2>&1
+java -cp http-demo FetchURLDemo https://api.github.com > evidence/http-github-output.txt 2>&1
+java -cp http-demo FetchURLDemo https://www.google.com > evidence/http-google-output.txt 2>&1
+java -cp http-demo FetchURLDemo http://github.com > evidence/http-redirect-output.txt 2>&1
+java -cp http-demo FetchURLDemo https://httpbin.org/basic-auth/user/passwd > evidence/http-401-output.txt 2>&1
+java -cp http-demo FetchURLDemo https://httpbin.org/status/403 > evidence/http-403-output.txt 2>&1
+```
+
 ## Runtime Evidence
 
 The saved demo outputs are:
@@ -66,6 +83,7 @@ The saved demo outputs are:
 - `evidence/http-401-output.txt`
 - `evidence/http-403-output.txt`
 - `evidence/http-example-output.txt`
+- `ipc-demo/producer-output.txt`
 - `handshake.log`
 
 These cover inherited/captured process streams, pipelines, file redirection,
