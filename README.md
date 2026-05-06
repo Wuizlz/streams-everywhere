@@ -37,10 +37,13 @@ PDF above is the submission copy:
 
 ## Compile And Run
 
-From the project root:
+Requirements:
+
+- JDK 11 or newer
+- Internet access for the HTTP demo
 
 ```bash
-cd "/Users/wuzi/Desktop/java workspace/Networking-Programming/streams-everywhere"
+cd streams-everywhere
 ```
 
 Compile and run the IPC demo:
